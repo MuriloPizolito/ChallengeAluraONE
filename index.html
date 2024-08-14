@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+
+    <header>
+        <img src="./assets/logo.svg" alt="logo de um foguete decolando">
+    </header>
+    
+        <div class="main">
+            <textarea placeholder="Digite o seu texto" class="main-text-area"></textarea>
+
+            <div class="footer">
+            <p>Apenas letras minúsculas e sem acento.</p>
+
+                <div class="button-footer"> 
+                    <button onclick="onCriptografar()" class="criptografar">Criptografar</button>
+                    <button onclick="onDescriptografar()" class="descriptografar">Descriptografar</button>
+                </div>         
+            </div>  
+        </div>    
+
+        <div class="result">
+            <img src="./assets/human.svg" alt="">
+            <h1>Nenhuma mensagem encontrada</h1>
+            <p>Digite um texto que você deseja criptografar ou descriptografar</p>
+        </div>
+    </main>
+
+    <script src="index.js"></script>
+
+</body>
+</html>
